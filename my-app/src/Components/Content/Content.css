@@ -1,0 +1,119 @@
+.content-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: url('https://www.thewadhwagroup.com/wp-content/uploads/2021/05/cement-texture.jpg');
+  overflow: hidden;
+}
+
+.content-left {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.building-image {
+  width: 100%;
+  height: 100%;
+}
+
+.building-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content-right {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #333;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  font-family: 'Playfair Display', serif;
+}
+
+.sub-heading {
+  color: #b87d4b;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.feature-icon {
+  color: #b87d4b;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.feature-item p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+}
+.ventilit-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.ventilit-heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ventilit-logo {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.ventilit-description {
+  font-size: 16px;
+  color: #666;
+  margin-top: 15px;
+  line-height: 1.5;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+} 
+@media (max-width: 1200px) {
+  .content-right {
+    padding: 3rem;
+  }
+  
+  .main-heading {
+    font-size: 2.4rem;
+  }
+  
+  .features-grid {
+    gap: 1.5rem;
+  }
+} 
