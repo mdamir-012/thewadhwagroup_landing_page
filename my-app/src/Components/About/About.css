@@ -1,0 +1,200 @@
+.about-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-container {
+  max-width: 100%;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.about-content {
+  flex: 1;
+  padding: 6rem 0 6rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.about-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 7.5rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 3rem;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  text-align: left;
+  padding-right: 2rem;
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+  padding-right: 2rem;
+}
+
+.about-text p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.scroll-indicator {
+  margin-top: 3rem;
+  position: relative;
+  text-align: left;
+}
+
+.arrow-container {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #c0a080;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: #c0a080;
+  transition: transform 0.3s ease;
+}
+
+.arrow-container:hover {
+  background-color: #c0a080;
+}
+
+.arrow-container:hover .arrow {
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.about-images {
+  flex: 1.2;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.first-image {
+  transform: translateY(-5%);
+}
+
+.second-image {
+  transform: translateY(5%);
+}
+
+.interior-image,
+.exterior-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.2s ease;
+}
+
+.image-wrapper:hover .interior-image,
+.image-wrapper:hover .exterior-image {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .about-content {
+    padding: 4rem 0 4rem 6rem;
+  }
+  
+  .about-title {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .about-content {
+    padding: 4rem 2rem 4rem 4rem;
+  }
+  
+  .about-title {
+    font-size: 5rem;
+  }
+  
+  .about-images {
+    height: 100vh;
+  }
+  
+  .first-image,
+  .second-image {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 3rem 1.5rem 3rem 2rem;
+  }
+  
+  .about-title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-text p {
+    font-size: 0.9rem;
+  }
+  
+  .about-images {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding: 2rem 1rem 2rem 1.5rem;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+  }
+  
+  .about-images {
+    height: 60vh;
+  }
+  
+  .arrow-container {
+    width: 50px;
+    height: 50px;
+  }
+} 
