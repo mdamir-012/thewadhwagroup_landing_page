@@ -1,0 +1,251 @@
+.stats-section {
+  width: 100%;
+  padding: 8rem 0;
+  background-image: url('https://www.thewadhwagroup.com/wp-content/uploads/2021/05/cement-texture.jpg');
+  background-blend-mode: overlay;
+  position: relative;
+}
+
+.stats-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Numbers Row */
+.numbers-row {
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+  margin-bottom: 8rem;
+}
+
+/* Values Row */
+.values-row {
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+  margin-bottom: 8rem;
+}
+
+/* Achievements Row */
+.achievements-row {
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+}
+
+.stat-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 2.5rem;
+}
+
+.stat-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0.4);
+}
+
+.stat-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 7rem;
+  font-weight: 300;
+  color: #c0a080;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+}
+
+.achievements-row .stat-number {
+  font-size: 5rem;
+}
+
+.stat-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.15em;
+  line-height: 1.8;
+  text-transform: uppercase;
+  max-width: 300px;
+}
+
+.value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+}
+
+.value-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 2.5rem;
+}
+
+.value-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0.4);
+}
+
+.value-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5rem;
+  font-weight: 300;
+  color: #c0a080;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.value-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.15em;
+  line-height: 1.8;
+  text-transform: uppercase;
+  max-width: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .numbers-row,
+  .values-row {
+    gap: 8rem;
+  }
+
+  .achievements-row {
+    gap: 6rem;
+  }
+  
+  .stat-number {
+    font-size: 6rem;
+  }
+
+  .achievements-row .stat-number {
+    font-size: 4.5rem;
+  }
+  
+  .value-title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .stats-section {
+    padding: 6rem 0;
+  }
+  
+  .numbers-row,
+  .values-row,
+  .achievements-row {
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  .numbers-row,
+  .values-row {
+    margin-bottom: 6rem;
+  }
+  
+  .stat-item,
+  .value-item {
+    flex: 0 0 calc(50% - 2rem);
+    margin-bottom: 4rem;
+  }
+
+  .achievements-row .stat-item {
+    flex: 0 0 calc(33.333% - 2rem);
+  }
+  
+  .stat-number {
+    font-size: 5rem;
+  }
+
+  .achievements-row .stat-number {
+    font-size: 4rem;
+  }
+  
+  .value-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-section {
+    padding: 4rem 0;
+  }
+  
+  .numbers-row,
+  .values-row {
+    margin-bottom: 4rem;
+  }
+
+  .stat-item,
+  .value-item,
+  .achievements-row .stat-item {
+    flex: 0 0 100%;
+  }
+  
+  .stat-number,
+  .achievements-row .stat-number {
+    font-size: 4rem;
+  }
+  
+  .value-title {
+    font-size: 3rem;
+  }
+  
+  .stat-description,
+  .value-description {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-section {
+    padding: 3rem 0;
+  }
+  
+  .stats-container {
+    padding: 0 1.5rem;
+  }
+  
+  .numbers-row,
+  .values-row,
+  .achievements-row {
+    gap: 3rem;
+  }
+  
+  .stat-icon,
+  .value-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-number,
+  .achievements-row .stat-number {
+    font-size: 3.5rem;
+  }
+  
+  .value-title {
+    font-size: 2.5rem;
+  }
+} 
