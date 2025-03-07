@@ -1,0 +1,101 @@
+.about-us-section {
+    padding: 80px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+.about-legacy {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #4a4a4a;
+}
+
+.about-description {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #666;
+    font-weight: 300;
+}
+
+.company-name {
+    color: #333;
+    font-weight: 600;
+}
+
+.project-name {
+    color: #333;
+    font-weight: 500;
+}
+
+.expandable-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.expandable-content.expanded {
+    max-height: 2000px;
+    transition: max-height 1s ease-in;
+}
+
+.read-more-btn {
+    background-color: transparent;
+    border: 2px solid #b87d4b;
+    color: #b87d4b;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.read-more-btn:hover {
+    background-color: #b87d4b;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .about-us-section {
+        padding: 60px 15px;
+    }
+
+    .about-legacy {
+        font-size: 18px;
+    }
+
+    .about-description {
+        font-size: 16px;
+    }
+
+    .read-more-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-section {
+        padding: 40px 15px;
+    }
+
+    .about-legacy {
+        font-size: 16px;
+    }
+
+    .about-description {
+        font-size: 15px;
+    }
+} 
